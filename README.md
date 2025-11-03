@@ -87,20 +87,9 @@ Contains the **entry point** of the application:
 
 ---
 
-## 🧠 Example Usage
-
-```java
-Zoo zoo = new Zoo("Safari Park", "Tunis");
-zoo.addAnimal(new Dolphin("Dolly", 5, "Ocean"));
-zoo.addAnimal(new Penguin("Pingu", 3, "Arctic"));
-zoo.displayAnimals();
-```
-
----
-
 ## 👩‍💻 Author
 
-Created by **[Bejaoui Fedi]**
+Created by **Bejaoui Fedi**
 Student project for **Object-Oriented Programming (Java)**.
 
 ---
