@@ -6,28 +6,27 @@ Ce projet Java est une application de gestion d'un zoo, développée progressive
 
 ---
 
-### Structure du projet
-src/
-└── tn/
-└── esprit/
-└── gestionzoo/
-├── entities/
-│ ├── Animal.java
-│ ├── Aquatic.java
-│ ├── Dolphin.java
-│ ├── Penguin.java
-│ ├── Terrestrial.java
-│ ├── Zoo.java
-│ └── Food.java
-├── interfaces/
-│ ├── Carnivore.java
-│ ├── Herbivore.java
-│ └── Omnivore.java
-├── exceptions/
-│ ├── ZooFullException.java
-│ └── InvalidAgeException.java
-└── main/
-└── ZooManagement.java
+ src/
+├── tn/
+│   └── esprit/
+│       └── gestionzoo/
+│           ├── entities/
+│           │   ├── Animal.java
+│           │   ├── Aquatic.java
+│           │   ├── Dolphin.java
+│           │   ├── Penguin.java
+│           │   ├── Terrestrial.java
+│           │   ├── Zoo.java
+│           │   └── Food.java
+│           ├── interfaces/
+│           │   ├── Carnivore.java
+│           │   ├── Herbivore.java
+│           │   └── Omnivore.java
+│           ├── exceptions/
+│           │   ├── ZooFullException.java
+│           │   └── InvalidAgeException.java
+│           └── main/
+│               └── ZooManagement.java
 
 ## 🧩 Prosit 1 – Bases de la POO
 **Objectif :** Comprendre les bases de la programmation orientée objet.
