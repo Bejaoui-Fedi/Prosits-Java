@@ -21,16 +21,13 @@ src/
             │   ├── Terrestrial.java
             │   ├── Zoo.java
             │   └── Food.java
-            │
             ├── interfaces/
             │   ├── Carnivore.java
             │   ├── Herbivore.java
             │   └── Omnivore.java
-            │
             ├── exceptions/
             │   ├── ZooFullException.java
             │   └── InvalidAgeException.java
-            │
             └── main/
                 └── ZooManagement.java
 
