@@ -1,37 +1,33 @@
-# 🦁 Zoo Management Project – Java
+# Projet de gestion de zoo – Java
 
-## 📌 Description
-Ce projet Java est une application de **gestion d’un zoo**, développée progressivement à travers
-plusieurs **prosits pédagogiques**.  
-Chaque prosit introduit un nouveau concept fondamental de Java et de la programmation orientée objet.
+## Description
+
+Ce projet Java est une application de gestion d'un zoo, développée progressivement à travers plusieurs prosits pédagogiques. Chaque projet introduit un nouveau concept fondamental de Java et de la programmation orientée objet.
 
 ---
 
-## 📁 Structure du projet
-
+### Structure du projet
 src/
 └── tn/
-    └── esprit/
-        └── gestionzoo/
-            ├── entities/
-            │   ├── Animal.java
-            │   ├── Aquatic.java
-            │   ├── Dolphin.java
-            │   ├── Penguin.java
-            │   ├── Terrestrial.java
-            │   ├── Zoo.java
-            │   └── Food.java
-            ├── interfaces/
-            │   ├── Carnivore.java
-            │   ├── Herbivore.java
-            │   └── Omnivore.java
-            ├── exceptions/
-            │   ├── ZooFullException.java
-            │   └── InvalidAgeException.java
-            └── main/
-                └── ZooManagement.java
-
----
+└── esprit/
+└── gestionzoo/
+├── entities/
+│ ├── Animal.java
+│ ├── Aquatic.java
+│ ├── Dolphin.java
+│ ├── Penguin.java
+│ ├── Terrestrial.java
+│ ├── Zoo.java
+│ └── Food.java
+├── interfaces/
+│ ├── Carnivore.java
+│ ├── Herbivore.java
+│ └── Omnivore.java
+├── exceptions/
+│ ├── ZooFullException.java
+│ └── InvalidAgeException.java
+└── main/
+└── ZooManagement.java
 
 ## 🧩 Prosit 1 – Bases de la POO
 **Objectif :** Comprendre les bases de la programmation orientée objet.
