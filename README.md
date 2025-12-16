@@ -1,145 +1,110 @@
-# 🦁 Zoo Management Project – Java
+# 🦁 Zoo Management Project
 
-## 📌 Description
-Ce projet Java est une application de **gestion d’un zoo**, développée progressivement à travers
-plusieurs **prosits pédagogiques**.  
-Chaque prosit introduit un nouveau concept fondamental de Java et de la programmation orientée objet.
+A simple **Java Object-Oriented Programming (OOP)** project that manages animals in a zoo.
+It demonstrates key OOP concepts such as **inheritance, polymorphism, exceptions, and encapsulation**.
 
 ---
 
-## 📁 Structure du projet
+## 📁 Project Structure
 
+```
 src/
-└── tn/
-    └── esprit/
-        └── gestionzoo/
-            ├── entities/
-            │   ├── Animal.java
-            │   ├── Aquatic.java
-            │   ├── Dolphin.java
-            │   ├── Penguin.java
-            │   ├── Terrestrial.java
-            │   ├── Zoo.java
-            │   └── Food.java
-            │
-            ├── interfaces/
-            │   ├── Carnivore.java
-            │   ├── Herbivore.java
-            │   └── Omnivore.java
-            │
-            ├── exceptions/
-            │   ├── ZooFullException.java
-            │   └── InvalidAgeException.java
-            │
-            └── main/
-                └── ZooManagement.java
+ └── tn/
+      └── esprit/
+           └── gestionzoo/
+                ├── entities/
+                │    ├── Animal.java
+                │    ├── Aquatic.java
+                │    ├── Dolphin.java
+                │    ├── Penguin.java
+                │    ├── Terrestrial.java
+                │    └── Zoo.java
+                ├── exceptions/
+                │    ├── ZooFullException.java
+                │    └── InvalidAgeException.java
+                └── main/
+                     └── ZooManagement.java
+```
 
 ---
 
-## 🧩 Prosit 1 – Bases de la POO
-**Objectif :** Comprendre les bases de la programmation orientée objet.
+## 🧩 Description of Packages and Classes
 
-- Création de la classe `Animal`
-- Encapsulation des attributs
-- Constructeur paramétré
-- Getters et setters
-- Méthode `toString()`
+### 1. `entities` package
 
-**Concepts :** classes, objets, encapsulation
+Contains all **core entity classes** of the zoo:
 
----
-
-## 🧩 Prosit 2 – Gestion du Zoo
-**Objectif :** Gérer un ensemble d’objets.
-
-- Création de la classe `Zoo`
-- Tableau d’objets `Animal[]`
-- Méthode `addAnimal()`
-- Vérification si le zoo est plein
-- Classe principale `ZooManagement`
-
-**Concepts :** tableaux, méthodes, logique métier
+* **Animal.java** – Base class representing a generic animal (name, age, species, etc.).
+* **Terrestrial.java** – Subclass for land animals (e.g., lions, elephants).
+* **Aquatic.java** – Subclass for water animals (contains attributes like swimming depth).
+* **Dolphin.java** – Represents a specific aquatic animal type with its own behavior.
+* **Penguin.java** – Another aquatic subclass, specialized for penguins.
+* **Zoo.java** – Main class for managing animals, including adding, listing, and counting them.
 
 ---
 
-## 🧩 Prosit 3 – Validation des données
-**Objectif :** Rendre le programme plus robuste.
+### 2. `exceptions` package
 
-- Vérification de l’âge de l’animal
-- Interdiction des âges négatifs
-- Utilisation du setter `setAge()`
+Contains **custom exceptions** used for error handling:
 
-**Concepts :** validation, sécurité des données
+* **ZooFullException.java** – Thrown when trying to add an animal to a full zoo.
+* **InvalidAgeException.java** – Thrown when an animal’s age is invalid (e.g., negative).
 
 ---
 
-## 🧩 Prosit 4 – Héritage
-**Objectif :** Réutiliser le code avec l’héritage.
+### 3. `main` package
 
-- Création de la classe `Terrestrial`
-- Création de la classe abstraite `Aquatic`
-- Héritage à partir de `Animal`
-- Ajout d’attributs spécifiques
+Contains the **entry point** of the application:
 
-**Concepts :** héritage, `extends`, classes abstraites
+* **ZooManagement.java** – Main class that runs the program.
+  It creates a zoo, adds animals, and demonstrates exception handling and class interactions.
 
 ---
 
-## 🧩 Prosit 5 – Polymorphisme
-**Objectif :** Manipuler les objets via leur classe mère.
+## ⚙️ Features
 
-- Création des classes `Dolphin` et `Penguin`
-- Redéfinition de méthodes
-- Utilisation du polymorphisme
-
-**Concepts :** polymorphisme, redéfinition
-
----
-
-## 🧩 Prosit 6 – Méthodes avancées
-**Objectif :** Travailler avec des types spécifiques.
-
-- Gestion des animaux aquatiques
-- Méthode `makeAquaticsSwim()`
-- Calcul de la profondeur maximale des pingouins
-- Redéfinition de `equals()`
-
-**Concepts :** instanceof, cast, méthodes avancées
+✅ Object-Oriented Design (OOP)
+✅ Inheritance and Polymorphism
+✅ Exception Handling
+✅ Array-based Animal Storage
+✅ Console-based Interaction
 
 ---
 
-## 🧩 Prosit 7 – Gestion des exceptions
-**Objectif :** Gérer les erreurs proprement.
+## 🚀 How to Run
 
-- Création de `ZooFullException`
-- Création de `InvalidAgeException`
-- Utilisation de `try / catch`
-- Levée d’exceptions personnalisées
+1. Compile the project:
 
-**Concepts :** exceptions, robustesse
+   ```bash
+   javac -d bin src/tn/esprit/gestionzoo/**/*.java
+   ```
 
----
+2. Run the main program:
 
-## 🧩 Prosit 8 – Interfaces et Enum
-**Objectif :** Modéliser les comportements alimentaires.
-
-- Création des interfaces :
-  - `Carnivore`
-  - `Herbivore`
-  - `Omnivore`
-- Création de l’énumération `Food`
-- Implémentation des interfaces dans les classes
-- Tests d’alimentation dans `ZooManagement`
-
-**Concepts :** interfaces, enum, généricité
+   ```bash
+   java -cp bin tn.esprit.gestionzoo.main.ZooManagement
+   ```
 
 ---
 
-## ✅ Conclusion
-Ce projet permet de maîtriser progressivement :
-- La programmation orientée objet en Java
-- L’héritage et le polymorphisme
-- La gestion des exceptions
-- L’utilisation des interfaces et des énumérations
+## 🧠 Example Usage
 
-Il constitue une base solide pour des projets Java plus avancés.
+```java
+Zoo zoo = new Zoo("Safari Park", "Tunis");
+zoo.addAnimal(new Dolphin("Dolly", 5, "Ocean"));
+zoo.addAnimal(new Penguin("Pingu", 3, "Arctic"));
+zoo.displayAnimals();
+```
+
+---
+
+## 👩‍💻 Author
+
+Created by **[Your Name]**
+Student project for **Object-Oriented Programming (Java)**.
+
+---
+
+## 📜 License
+
+This project is for educational purposes only.
