@@ -108,3 +108,5 @@ Student project for **Object-Oriented Programming (Java)**.
 ## 📜 License
 
 This project is for educational purposes only.
+
+Lien de LinkedIn : https://www.linkedin.com/in/fedi-bejaoui-9205322a4/
